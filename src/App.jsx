@@ -12,7 +12,7 @@ import { LoadingScreen } from "./components/LoadingScreen";
 
 function App() {
   const [section, setSection] = useState(0);
-  const [started, setStarted] = useState(false);
+  // const [started, setStarted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <LoadingScreen started={started} setStarted={setStarted} />
+      {/* <LoadingScreen started={started} setStarted={setStarted} /> */}
       <MotionConfig transition={{
         ...framerMotionConfig
       }}>
